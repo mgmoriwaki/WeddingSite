@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Melissa & Alex</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+  <!--font-family: 'Arizonia', Helvetica, sans-serif-->
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <!--font-family: 'Shadows Into Light', cursive;-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <!--font-family: 'Open Sans Condensed', sans-serif;-->
+  <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+  <!--font-family: 'Sacramento', cursive;-->
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+  <!--font-family: 'Bad Script', cursive;-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--countdown script-->
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Aug 10, 2018 11:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+      // Get todays date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="countdown"
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
+  <style>
+    body {
+      position: relative;
+    }
+
+    .affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+    }
+
+    .navbar {
+      margin-bottom: 0px;
+    }
+
+    .affix~.container-fluid {
+      position: relative;
+      top: 50px;
+    }
+
+    h1 {
+      font: 75px/1.3 'Sacramento', Helvetica, sans-serif;
+      color: rgba(33, 57, 105, 1);
+      text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font: 40px 'Open Sans Condensed', sans-serif;
+      color: rgba(33, 57, 105, 1);
+    }
+
+    h3 {
+      font: 30px 'Open Sans Condensed', sans-serif;
+      color: rgba(33, 57, 105, 1);
+    }
+
+    h4 {
+      font: 20px;
+    }
+
+    hr {
+      border-color: rgba(33, 57, 105, .5);
+      width:75%;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .text-block {
+      position: absolute;
+      bottom: 225px;
+      right: 325px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50"style="background-image: url('img/cover.jpg'); background-size:100%">
+
+  <div class="container-fluid" height="750px">
+    <h1>Alex & Melissa - 08.10.18</h1>
+  </div>
+
+  <div align="center">
+      <h1>The Countdown Is On!</h1>
+      <h2 id="countdown"></h2>
+      <br>
+  </div>
+
+  <div align="center">
+      <a class="btn btn-info btn-lg" href="#">Let's Party!</a>
+  </div>
+
+
+  <!-- <p id="countdown"></p> -->
+
+  
+</body>
+
+</html>

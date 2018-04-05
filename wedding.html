@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Melissa & Alex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+    <!--font-family: 'Arizonia', Helvetica, sans-serif-->
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <!--font-family: 'Shadows Into Light', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <!--font-family: 'Open Sans Condensed', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <!--font-family: 'Sacramento', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <!--font-family: 'Bad Script', cursive;-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <div class="container-fluid">
+        <h1>Alex & Melissa &nbsp; 08.10.18</h1>
+    </div>
+
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" style="background-color: #213969; font-color:white">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="wedding.html">Our Wedding</a>
+                        </li>
+
+                        <li>
+                            <a href="details.html">Details</a>
+                        </li>
+
+                        <li>
+                            <a type="button" data-toggle="modal" data-target="#rsvpModal">RSVP</a>
+
+                            <div class="modal fade" id="rsvpModal" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title" style="color:#213969">RSVP by June 1</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <script type="text/javascript" src="http://app.rsvpify.com/embed/500083555"></script>
+                                            <script type="text/javascript" src="http://app.rsvpify.com/js/iframeResizer.min.js"></script>
+                                            <script type="text/javascript">
+                                                iFrameResize({
+                                                    autoResize: true,
+                                                    checkOrigin: false,
+                                                    heightCalculationMethod: 'max',
+                                                    enablePublicMethods: true
+                                                }, "#RSVPifyIFrame");
+                                            </script>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="registry.html">Registry</a>
+                        </li>
+
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div align="center">
+
+        <div id="weddingDetails" class="container-fluid ">
+
+            <!-- <p id="countdown"></p> -->
+
+            <div class="container">
+                <h1>The Wedding</h1>
+                <img src="img/dockside2.jpg" alt="Dockside on York Harbor" width="80%" align="center">
+            </div>
+        </div>
+
+        <hr>
+
+
+        <div id="weddingParty" class="container-fluid">
+            <h1>The Wedding Party</h1>
+            <div id="bridesmaids" class="row">
+                <div id="jamie" class="col-lg-4">
+                    <img class="rounded-circle" src="img/jamie.jpg" alt="Jamie Foley" width="50%">
+                    <h2>Jamie Foley</h2>
+                    <h4>Matron of Honor</h4>
+                </div>
+                <div id="kali" class="col-lg-4">
+                    <img class="rounded-circle" src="img/kali.jpg" alt="Kali Hart" width="50%">
+                    <h2>Kali Hart</h2>
+                    <h4>Bridesmaid</h4>
+                </div>
+                <div id="alyssa" class="col-lg-4">
+                    <img class="rounded-circle" src="img/alyssa.jpg" alt="Alyssa Pouliot" width="50%">
+                    <h2>Alyssa Pouliot</h2>
+                    <h4>Bridesmaid</h4>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div id="groomsmen" class="row">
+                <div id="ben" class="col-lg-4">
+                    <img class="rounded-circle" src="img/bsinc.jpg" alt="Ben Sinclair" width="50%">
+                    <h2>Ben Sinclair</h2>
+                    <h4>Best Man</h4>
+                </div>
+                <div id="canning" class="col-lg-4">
+                    <img class="rounded-circle" src="img/mattycannz.jpg" alt="Matt Canning" width="50%">
+                    <h2>Matt Canning</h2>
+                    <h4>Groomsman</h4>
+                </div>
+                <div id="ogden" class="col-lg-4">
+                    <img class="rounded-circle" src="img/ogden.png" alt="Matt Ogden" width="50%">
+                    <h2>Matt Ogden</h2>
+                    <h4>Groomsman</h4>
+                </div>
+            </div>
+        </div>
+        <!--end #weddingParty-->
+
+        <hr>
+
+
+        <div id="timeline" class="container-fluid">
+            <h1>Wedding Day Timeline</h1>
+            <h2><b>Dockside on York Harbor</b></h2>
+            <h3>Ceremony</h3>
+            <h4>11:00 - 11:30 AM</h4>
+            <h3>Cocktail Hour</h3>
+            <h4>11:30 AM - 12:30 PM</h4>
+            <h3>Reception</h3>
+            <h4>12:30 - 5:00 PM</h4>
+            <br>
+            <h2><b>Downtown Portsmouth</b></h2>
+            <h3>After Party</h3>
+            <h4>5:00 - 7:00 PM</h4>
+            <br>
+            <h2><b>Isles of Shoals Steamship Company</b></span>
+            </h2>
+            <h3>Cocktail Cruise</h3>
+            <h4>7:30 - 9:30 PM</h4>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>

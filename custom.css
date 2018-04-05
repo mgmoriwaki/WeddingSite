@@ -1,0 +1,154 @@
+body {
+  position: relative;
+}
+
+
+
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.affix~.container-fluid {
+  position: relative;
+  top: 50px;
+}
+
+h1 {
+  font: 75px/1.3em 'Sacramento', Helvetica, sans-serif;
+  color: rgba(33, 57, 105, 1);
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font: 40px/1.18em 'Open Sans Condensed', sans-serif;
+  color: rgba(33, 57, 105, 1);
+}
+
+h3 {
+  font: 30px/1.125em 'Open Sans Condensed', sans-serif;
+  color: rgba(33, 57, 105, 1);
+}
+
+h4 {
+  font: 20px/1;
+}
+
+hr {
+  border-color: rgba(33, 57, 105, .5);
+  width: 75%;
+}
+
+.container {
+  position: relative;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 225px;
+  right: 325px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.fancy {
+  line-height: .5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid rgba(33, 57, 105, .5);
+  border-top: 1px solid rgba(33, 57, 105, .5);
+  top: 0;
+  width: 100px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+#jamie, #kali, #alyssa, #ben, #canning, #ogden {
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+.glyphicon {
+  margin-right: 5px;
+}
+
+.thumbnail {
+  margin-bottom: 20px;
+  padding: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.item.list-group-item {
+  float: none;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.item.list-group-item .list-group-image {
+  margin-right: 10px;
+}
+
+.item.list-group-item .thumbnail {
+  margin-bottom: 0px;
+}
+
+.item.list-group-item .caption {
+  padding: 9px 9px 0px 9px;
+}
+
+.item.list-group-item:nth-of-type(odd) {
+  background: #eeeeee;
+}
+
+.item.list-group-item:before,
+.item.list-group-item:after {
+  display: table;
+  content: " ";
+}
+
+.item.list-group-item img {
+  float: left;
+}
+
+.item.list-group-item:after {
+  clear: both;
+}
+
+.list-group-item-text {
+  margin: 0 0 11px;
+}
+
+@media only screen and (max-width: 768px) {
+  h1{font-size: 4em}
+  .smallH1{font-size: 2.5em}
+  h2{font-size: 2em}
+  h3{font-size: 1.5em}
+  h4{font-size: 1em}
+}
