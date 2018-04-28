@@ -1,113 +1,55 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Melissa & Alex</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="custom.css">
-    <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
-    <!--font-family: 'Arizonia', Helvetica, sans-serif-->
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
-    <!--font-family: 'Shadows Into Light', cursive;-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <!--font-family: 'Open Sans Condensed', sans-serif;-->
-    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-    <!--font-family: 'Sacramento', cursive;-->
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
-    <!--font-family: 'Bad Script', cursive;-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/blog.js"></script>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Alex &amp; Melissa - Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="js/blog.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="custom.css" rel="stylesheet" />
+	<link href="http://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet" type="text/css" /><!--font-family: 'Arizonia', Helvetica, sans-serif-->
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet" /><!--font-family: 'Shadows Into Light', cursive;-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" /><!--font-family: 'Open Sans Condensed', sans-serif;-->
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet" /><!--font-family: 'Sacramento', cursive;-->
+	<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet" /><!--font-family: 'Bad Script', cursive;-->
 </head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div id="fb-root"></div>
-    <script>(function (d, s, id) {
+<body data-offset="50" data-spy="scroll" data-target=".navbar">
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
             js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-    <div class="container-fluid" height="750px">
-            <h1>Alex & Melissa &nbsp; 08.10.18</h1>
-    </div>
 
-    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" style="background-color: #213969; font-color:white">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+<div class="container-fluid" height="750px">
+<h1>Alex &amp; Melissa &nbsp; 08.10.18</h1>
+</div>
 
-            </div>
-            <div>
-                <div class="collapse navbar-collapse" id="nav">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="wedding.html">Our Wedding</a>
-                        </li>
+<nav class="navbar navbar-inverse" data-offset-top="197" data-spy="affix" style="background-color: #213969; font-color:white">
+<div class="container-fluid">
+<div class="navbar-header"><button class="navbar-toggle" data-target="#nav" data-toggle="collapse" type="button"></button></div>
 
-                        <li>
-                            <a href="details.html">Details</a>
-                        </li>
+<div>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="nav navbar-nav">
+	<li><a href="wedding.html">Our Wedding</a></li>
+	<li><a href="details.html">Details</a></li>
+	<li><a href="http://mrandmrsklatt.rsvpify.com" target="blank">RSVP</a></li>
+	<li><a href="registry.html">Registry</a></li>
+	<li class="active"><a href="blog.html">Blog</a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
 
-                        <li>
-                            <a type="button" data-toggle="modal" data-target="#rsvpModal">RSVP</a>
-
-                            <div class="modal fade" id="rsvpModal" role="dialog">
-                                <div class="modal-dialog">
-
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title" style="color:#213969">RSVP by June 1</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <script type="text/javascript" src="http://app.rsvpify.com/embed/500083555"></script>
-                                            <script type="text/javascript" src="http://app.rsvpify.com/js/iframeResizer.min.js"></script>
-                                            <script type="text/javascript">
-                                                iFrameResize({
-                                                    autoResize: true,
-                                                    checkOrigin: false,
-                                                    heightCalculationMethod: 'max',
-                                                    enablePublicMethods: true
-                                                }, "#RSVPifyIFrame");
-                                            </script>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="registry.html">Registry</a>
-                        </li>
-
-                        <li class="active">
-                            <a href="blog.html">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
-
-        <div>
-            <h3 align="center">Check back for more posts and photos from the bridal shower, wedding, and honeymoon!</h3>
-        </div>
-
-        <!-- <div class="well well-sm">
+<div class="container">
+<div>
+<h3 align="center">Check back for more posts and photos from the bridal shower, wedding, and honeymoon!</h3>
+</div>
+<!-- <div class="well well-sm">
             <strong>Display</strong>
             <div class="btn-group">
                 <a href="#" id="list" class="btn btn-default btn-sm">
@@ -117,81 +59,54 @@
                     <span class="glyphicon glyphicon-th"></span>Grid</a>
             </div>
         </div> -->
-        <div id="products" class="row list-group">
-            <div class="item  col-xs-4 col-lg-4">
-                <div class="thumbnail">
-                    <img class="group list-group-image" src="img/blog/proposal.jpg" alt="Proposal" />
-                    <div class="caption">
-                        <h3 class="group inner list-group-item-heading">
-                            The Proposal</h3>
-                        <p class="group inner list-group-item-text">
-                            On April 2, 2017 Alex and I were making pancakes for breakfast. While I was mixing the batter Alex started to say, "So for
-                            lunch..." and I was thinking to myself, "Lunch, really? We're still in the process of making
-                            breakfast!" Then Alex finished his sentence, "...do you want to go on a picnic?" Keep in mind
-                            we had just gotten about 2.5 feet of snow the day before. Where in the world would he want to
-                            picnic? I suggested the living room but Alex had a different idea...</p>
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <a class="btn btn-info btn-lg btn-block" href="http://www.jquery2dotnet.com" data-toggle="modal" data-target="#modal_TheProposal">Read More</a>
-                                <div class="modal fade" id="modal_TheProposal" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title" style="color:#213969">The Proposal</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <p class="group inner list-group-item-text" style="color:rgb(160, 160, 160)">
-                                                    On April 2, 2017 Alex and I were making pancakes for breakfast. While I was mixing the batter Alex started to say, "So for
-                                                    lunch..." and I was thinking to myself, "Lunch, really? We're still in
-                                                    the process of making breakfast!" Then Alex finished his sentence, "...do
-                                                    you want to go on a picnic?" Keep in mind we had just gotten about 2.5
-                                                    feet of snow the day before. Where in the world would he want to picnic?
-                                                    I suggested the living room but Alex had a different idea...
-                                                </p>
-                                                <p class="group inner list-group-item-text">
-                                                    I thought he might be up to something so I tried to play it cool and agreed to the picnic-lunch-in-the-snow plan. That afternoon
-                                                    Alex packed up lunch and we hopped in the car. We ended up in Kensington
-                                                    at the town park. In high school we often went there after taking Buddy
-                                                    for a walk.
-                                                </p>
-                                                <p class="group inner list-group-item-text">
-                                                    It was a beautiful sunny day, though we still had to tromp through the snow to the pavilion picnic area. We ate lunch in
-                                                    the sun and Alex ever so casually told me how much I mean to him, basically
-                                                    greasing my wheels to work his way up to the big question.
-                                                </p>
-                                                <p class="group inner list-group-item-text">
-                                                    I was facing away from Alex noting how a tree near the pavilion had really weird banches when Alex said, "Hey Melis..." and
-                                                    I turned around to find him down on one knee holding something quite
-                                                    sparkly, "Will you marry me?" Of course I blurted out "YEAH! I mean YES!"
-                                                    I felt like I had to be more formal about it.
-                                                </p>
-                                                <p class="group inner list-group-item-text">
-                                                    And now we're here excitingly planning our wedding for August 10, 2018!!!
-                                                </p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
+<div class="row list-group" id="products">
+<div class="item  col-xs-4 col-lg-4">
+<div class="thumbnail"><img alt="Proposal" class="group list-group-image" src="img/blog/proposal.jpg" />
+<div class="caption">
+<h3 class="group inner list-group-item-heading">The Proposal</h3>
 
-            <!--begin post template-->
-            <!-- Steps to post:
+<p class="group inner list-group-item-text">On April 2, 2017 Alex and I were making pancakes for breakfast. While I was mixing the batter Alex started to say, &quot;So for lunch...&quot; and I was thinking to myself, &quot;Lunch, really? We&#39;re still in the process of making breakfast!&quot; Then Alex finished his sentence, &quot;...do you want to go on a picnic?&quot; Keep in mind we had just gotten about 2.5 feet of snow the day before. Where in the world would he want to picnic? I suggested the living room but Alex had a different idea...</p>
+
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a class="btn btn-info btn-lg btn-block" data-target="#modal_TheProposal" data-toggle="modal" href="http://www.jquery2dotnet.com">Read More</a>
+
+<div class="modal fade" id="modal_TheProposal" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" data-dismiss="modal" type="button">&times;</button>
+
+<h4 class="modal-title" style="color:#213969">The Proposal</h4>
+</div>
+
+<div class="modal-body">
+<p class="group inner list-group-item-text" style="color:rgb(160, 160, 160)">On April 2, 2017 Alex and I were making pancakes for breakfast. While I was mixing the batter Alex started to say, &quot;So for lunch...&quot; and I was thinking to myself, &quot;Lunch, really? We&#39;re still in the process of making breakfast!&quot; Then Alex finished his sentence, &quot;...do you want to go on a picnic?&quot; Keep in mind we had just gotten about 2.5 feet of snow the day before. Where in the world would he want to picnic? I suggested the living room but Alex had a different idea...</p>
+
+<p class="group inner list-group-item-text">I thought he might be up to something so I tried to play it cool and agreed to the picnic-lunch-in-the-snow plan. That afternoon Alex packed up lunch and we hopped in the car. We ended up in Kensington at the town park. In high school we often went there after taking Buddy for a walk.</p>
+
+<p class="group inner list-group-item-text">It was a beautiful sunny day, though we still had to tromp through the snow to the pavilion picnic area. We ate lunch in the sun and Alex ever so casually told me how much I mean to him, basically greasing my wheels to work his way up to the big question.</p>
+
+<p class="group inner list-group-item-text">I was facing away from Alex noting how a tree near the pavilion had really weird branches when Alex said, &quot;Hey Melis...&quot; and I turned around to find him down on one knee holding something quite sparkly, &quot;Will you marry me?&quot; Of course I blurted out &quot;YEAH! I mean YES!&quot; I felt like I had to be more formal about it.</p>
+
+<p class="group inner list-group-item-text">And now we&#39;re here excitingly planning our wedding for August 10, 2018!!!</p>
+</div>
+
+<div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" type="button">Close</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--begin post template--><!-- Steps to post:
                 - Img
                 - Title
                 - Blurb
                 - Modal target and id to modal_Title
                 - Title, blurb, and continued blurb
-            -->
-            <!-- <div class="item  col-xs-4 col-lg-4">
+            --><!-- <div class="item  col-xs-4 col-lg-4">
                 <div class="thumbnail">
                     <img class="group list-group-image" src="img/blog/proposal.jpg" alt="Proposal" />
                     <div class="caption">
@@ -241,13 +156,7 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
-            <!--end post template-->
-            
-
-        </div>
-    </div>
-
+            </div> --><!--end post template--></div>
+</div>
 </body>
-
 </html>
